@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Mindfulness | Salud Mental</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: #f6fffd;
+            color: #223635;
+            line-height: 1.7
+        }
+
+        :root {
+            --primary: #2f8f83;
+            --soft: #e9f7f4;
+            --dark: #163934
+        }
+
+        .hero {
+            background: linear-gradient(rgba(15, 55, 50, .55), rgba(15, 55, 50, .55)), url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1600&q=80') center/cover;
+            min-height: 72vh;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+            color: #fff
+        }
+
+        .hero-content {
+            max-width: 760px
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, .18);
+            margin-bottom: 18px
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 18px
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 26px;
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: auto;
+            padding: 90px 7%
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--dark);
+            margin-bottom: 14px
+        }
+
+        .intro {
+            background: #fff;
+            padding: 45px;
+            border-radius: 28px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .07);
+            margin-bottom: 70px
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            align-items: center
+        }
+
+        .intro-grid img {
+            width: 100%;
+            border-radius: 24px
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px
+        }
+
+        .pillar {
+            background: var(--soft);
+            padding: 25px;
+            border-radius: 22px
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 34px;
+            margin-top: 30px
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+            transition: .35s
+        }
+
+        .card:hover {
+            transform: translateY(-8px)
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover
+        }
+
+        .card-content {
+            padding: 30px
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            font-size: 1.5rem;
+            color: var(--dark)
+        }
+
+        .banner {
+            margin-top: 80px;
+            background: linear-gradient(135deg, #2f8f83, #4faea1);
+            color: #fff;
+            padding: 60px;
+            border-radius: 34px
+        }
+
+        .grid4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin-top: 35px
+        }
+
+        .box {
+            background: rgba(255, 255, 255, .14);
+            padding: 25px;
+            border-radius: 20px
+        }
+
+        .resources {
+            margin-top: 90px;
+            background: #fff;
+            padding: 55px;
+            border-radius: 30px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .07)
+        }
+
+        .links a {
+            display: block;
+            text-decoration: none;
+            margin: 14px 0;
+            color: var(--primary);
+            font-weight: 600
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px
+        }
+
+        @media(max-width:900px) {
+            h1 {
+                font-size: 2.6rem
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr
+            }
+
+            .banner {
+                padding: 35px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Atención plena</span>
+            <h1>Mindfulness</h1>
+            <p>La práctica de la atención plena ayuda a reducir estrés, fortalecer la calma y vivir con mayor conciencia
+                del presente.</p>
+            <a href="index.html" class="back-btn">Volver al inicio</a>
+        </div>
+    </header>
+    <section class="container">
+        <div class="section-title">
+            <h2>¿Qué es Mindfulness?</h2>
+            <p>Es la práctica de prestar atención al momento presente con apertura, sin juicio.</p>
+        </div>
+        <div class="intro">
+            <div class="intro-grid">
+                <div>
+                    <h2>Principios básicos</h2>
+                    <p>La atención plena puede integrarse a la vida diaria para favorecer equilibrio emocional.</p>
+                    <div class="pillars">
+                        <div class="pillar">
+                            <h3>🧘 Presencia</h3>
+                            <p>Conectar con el aquí y ahora.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>🌿 Calma</h3>
+                            <p>Reducir reactividad y tensión.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>💭 Observación</h3>
+                            <p>Notar pensamientos sin juzgar.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>❤️ Autocompasión</h3>
+                            <p>Relacionarte contigo con amabilidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80"
+                    alt="Mindfulness">
+            </div>
+        </div>
+        <div class="section-title">
+            <h2>Prácticas recomendadas</h2>
+            <p>Técnicas simples para comenzar o fortalecer tu práctica.</p>
+        </div>
+        <div class="cards">
+            <div class="card"><img
+                    src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Respiración consciente</h3>
+                    <p>Volver a la respiración para centrarte.</p>
+                </div>
+            </div>
+            <div class="card"><img
+                    src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Meditación guiada</h3>
+                    <p>Espacios para cultivar serenidad mental.</p>
+                </div>
+            </div>
+            <div class="card"><img
+                    src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Escaneo corporal</h3>
+                    <p>Reconocer tensión y relajar el cuerpo.</p>
+                </div>
+            </div>
+            <div class="card"><img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Caminata consciente</h3>
+                    <p>Practicar atención plena en movimiento.</p>
+                </div>
+            </div>
+            <div class="card"><img
+                    src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Diario consciente</h3>
+                    <p>Reflexionar emociones y pensamientos.</p>
+                </div>
+            </div>
+            <div class="card"><img
+                    src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Pausas mindful</h3>
+                    <p>Micro pausas para reconectar contigo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h2>Beneficios del mindfulness</h2>
+            <div class="grid4">
+                <div class="box">
+                    <h3>😌 Menos estrés</h3>
+                    <p>Favorece regulación emocional.</p>
+                </div>
+                <div class="box">
+                    <h3>🎯 Más enfoque</h3>
+                    <p>Mejora atención y claridad mental.</p>
+                </div>
+                <div class="box">
+                    <h3>❤️ Bienestar</h3>
+                    <p>Promueve calma y autocuidado.</p>
+                </div>
+                <div class="box">
+                    <h3>🌱 Resiliencia</h3>
+                    <p>Fortalece respuesta ante desafíos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="resources">
+            <h2>Recursos recomendados</h2>
+            <div class="links">
+                <a href="https://www.mindful.org">Mindful - Recursos</a>
+                <a href="https://bienestarmindfulness.com/">Bienestar y mindfulness</a>
+                <a href="https://open.spotify.com/show/0mtEe3WsNfNwHJRBseUt93">Podcast mindful</a>
+            </div>
+        </div>
+    </section>
+    <footer>© Salud Mental | Mindfulness</footer>
+</body>
+
+</html>

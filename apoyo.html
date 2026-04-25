@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Apoyo Psicosocial | Salud Mental</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: #f6fffd;
+            color: #223635;
+            line-height: 1.7
+        }
+
+        :root {
+            --primary: #2f8f83;
+            --soft: #e9f7f4;
+            --dark: #163934
+        }
+
+        .hero {
+            background: linear-gradient(rgba(15, 55, 50, .55), rgba(15, 55, 50, .55)), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80') center/cover;
+            min-height: 72vh;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+            color: #fff
+        }
+
+        .hero-content {
+            max-width: 760px
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, .18);
+            margin-bottom: 18px
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 18px
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 26px;
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: auto;
+            padding: 90px 7%
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--dark);
+            margin-bottom: 14px
+        }
+
+        .intro {
+            background: #fff;
+            padding: 45px;
+            border-radius: 28px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .07);
+            margin-bottom: 70px
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            align-items: center
+        }
+
+        .intro-grid img {
+            width: 100%;
+            border-radius: 24px
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px
+        }
+
+        .pillar {
+            background: var(--soft);
+            padding: 25px;
+            border-radius: 22px
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 34px;
+            margin-top: 30px
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+            transition: .35s
+        }
+
+        .card:hover {
+            transform: translateY(-8px)
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover
+        }
+
+        .card-content {
+            padding: 30px
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            font-size: 1.5rem;
+            color: var(--dark)
+        }
+
+        .banner {
+            margin-top: 80px;
+            background: linear-gradient(135deg, #2f8f83, #4faea1);
+            color: #fff;
+            padding: 60px;
+            border-radius: 34px
+        }
+
+        .grid4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin-top: 35px
+        }
+
+        .box {
+            background: rgba(255, 255, 255, .14);
+            padding: 25px;
+            border-radius: 20px
+        }
+
+        .resources {
+            margin-top: 90px;
+            background: #fff;
+            padding: 55px;
+            border-radius: 30px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .07)
+        }
+
+        .links a {
+            display: block;
+            text-decoration: none;
+            margin: 14px 0;
+            color: var(--primary);
+            font-weight: 600
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px
+        }
+
+        @media(max-width:900px) {
+            h1 {
+                font-size: 2.6rem
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr
+            }
+
+            .banner {
+                padding: 35px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Redes de apoyo</span>
+            <h1>Apoyo Psicosocial</h1>
+            <p>El acompañamiento psicosocial fortalece el bienestar emocional, la resiliencia y la capacidad para
+                afrontar situaciones difíciles.</p>
+            <a href="index.html" class="back-btn">Volver al inicio</a>
+        </div>
+    </header>
+    <section class="container">
+        <div class="section-title">
+            <h2>¿Qué es el apoyo psicosocial?</h2>
+            <p>Es el acompañamiento orientado a fortalecer recursos emocionales, sociales y comunitarios.</p>
+        </div>
+        <div class="intro">
+            <div class="intro-grid">
+                <div>
+                    <h2>Pilares del apoyo psicosocial</h2>
+                    <p>Promueve bienestar, protección y redes de apoyo en distintos contextos.</p>
+                    <div class="pillars">
+                        <div class="pillar">
+                            <h3>🤝 Acompañamiento</h3>
+                            <p>Escucha, orientación y contención.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>🌐 Redes de apoyo</h3>
+                            <p>Fortalecer vínculos y comunidad.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>🧠 Afrontamiento</h3>
+                            <p>Desarrollar habilidades resilientes.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>🛟 Protección</h3>
+                            <p>Promover seguridad y bienestar.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1200&q=80"
+                    alt="Apoyo psicosocial">
+            </div>
+        </div>
+        <div class="section-title">
+            <h2>Estrategias de apoyo psicosocial</h2>
+            <p>Acciones que fortalecen la salud mental individual y colectiva.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Escucha activa</h3>
+                    <p>Generar espacios seguros para expresar emociones.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Apoyo comunitario</h3>
+                    <p>Fortalecer redes y apoyo mutuo.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Orientación emocional</h3>
+                    <p>Herramientas para afrontar dificultades.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Recuperación emocional</h3>
+                    <p>Procesos de apoyo frente a crisis o pérdidas.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Promoción del bienestar</h3>
+                    <p>Acciones preventivas y fortalecimiento emocional.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1474418397713-7ede21d49118?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Acceso a ayuda</h3>
+                    <p>Conectar personas con recursos de apoyo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h2>¿Cuándo puede ser importante buscar apoyo?</h2>
+            <div class="grid4">
+                <div class="box">
+                    <h3>💭 Crisis emocional</h3>
+                    <p>Momentos de alta carga o desbordamiento.</p>
+                </div>
+                <div class="box">
+                    <h3>🫂 Aislamiento</h3>
+                    <p>Cuando faltan redes de apoyo cercanas.</p>
+                </div>
+                <div class="box">
+                    <h3>⚠ Situaciones difíciles</h3>
+                    <p>Pérdidas, cambios o eventos críticos.</p>
+                </div>
+                <div class="box">
+                    <h3>🌱 Fortalecimiento</h3>
+                    <p>No solo en crisis, también para crecer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="resources">
+            <h2>Recursos recomendados</h2>
+            <div class="links">
+                <a
+                    href="https://www.aeesme.org/wp-content/uploads/2024/11/Los-cuidados-a-traves-de-las-redes-de-apoyo-social.pdf">Ayuda
+                    Mutua -libro pdf</a>
+                <a
+                    href="https://saludlaboral.org/portal-preventivo/riesgos-laborales/riesgos-relacionados-con-la-psicosociologia/factores-psicosociales/">Recursos
+                    psicosociales</a>
+                <a href="https://medlineplus.gov/spanish/mentalhealth.html">Información sobre apoyo emocional</a>
+            </div>
+        </div>
+    </section>
+    <footer>© Salud Mental | Apoyo Psicosocial</footer>
+</body>
+
+</html>
+```

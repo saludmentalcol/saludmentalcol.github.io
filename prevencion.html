@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Prevención y Educación | Salud Mental</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: #f6fffd;
+            color: #223635;
+            line-height: 1.7
+        }
+
+        :root {
+            --primary: #2f8f83;
+            --soft: #e9f7f4;
+            --dark: #163934
+        }
+
+        .hero {
+            background: linear-gradient(rgba(15, 55, 50, .55), rgba(15, 55, 50, .55)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&w=1600&q=80') center/cover;
+            min-height: 72vh;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+            color: #fff
+        }
+
+        .hero-content {
+            max-width: 760px
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, .18);
+            margin-bottom: 18px
+        }
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 18px
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 26px;
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: auto;
+            padding: 90px 7%
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--dark);
+            margin-bottom: 14px
+        }
+
+        .intro {
+            background: #fff;
+            padding: 45px;
+            border-radius: 28px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, .07);
+            margin-bottom: 70px
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            align-items: center
+        }
+
+        .intro-grid img {
+            width: 100%;
+            border-radius: 24px
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px
+        }
+
+        .pillar {
+            background: var(--soft);
+            padding: 25px;
+            border-radius: 22px
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 34px;
+            margin-top: 30px
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+            transition: .35s
+        }
+
+        .card:hover {
+            transform: translateY(-8px)
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover
+        }
+
+        .card-content {
+            padding: 30px
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            font-size: 1.5rem;
+            color: var(--dark)
+        }
+
+        .banner {
+            margin-top: 80px;
+            background: linear-gradient(135deg, #2f8f83, #4faea1);
+            color: #fff;
+            padding: 60px;
+            border-radius: 34px
+        }
+
+        .grid4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin-top: 35px
+        }
+
+        .box {
+            background: rgba(255, 255, 255, .14);
+            padding: 25px;
+            border-radius: 20px
+        }
+
+        .resources {
+            margin-top: 90px;
+            background: #fff;
+            padding: 55px;
+            border-radius: 30px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .07)
+        }
+
+        .links a {
+            display: block;
+            text-decoration: none;
+            margin: 14px 0;
+            color: var(--primary);
+            font-weight: 600
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px
+        }
+
+        @media(max-width:900px) {
+            h1 {
+                font-size: 2.6rem
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr
+            }
+
+            .banner {
+                padding: 35px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Promoción de bienestar</span>
+            <h1>Prevención y Educación</h1>
+            <p>La información y la prevención fortalecen la salud mental, reducen riesgos y promueven decisiones
+                saludables.</p>
+            <a href="index.html" class="back-btn">Volver al inicio</a>
+        </div>
+    </header>
+    <section class="container">
+        <div class="section-title">
+            <h2>¿Por qué prevenir y educar?</h2>
+            <p>Promover conocimiento es una herramienta poderosa para cuidar la salud mental.</p>
+        </div>
+        <div class="intro">
+            <div class="intro-grid">
+                <div>
+                    <h2>Ejes fundamentales</h2>
+                    <p>La prevención comienza con información, hábitos protectores y detección temprana.</p>
+                    <div class="pillars">
+                        <div class="pillar">
+                            <h3>🧠 Educación</h3>
+                            <p>Comprender factores protectores y riesgos.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>🔍 Detección temprana</h3>
+                            <p>Reconocer señales de alerta oportunamente.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>🛡 Prevención</h3>
+                            <p>Promover acciones antes de la crisis.</p>
+                        </div>
+                        <div class="pillar">
+                            <h3>🌱 Promoción</h3>
+                            <p>Fortalecer bienestar y hábitos saludables.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80"
+                    alt="Educación mental">
+            </div>
+        </div>
+        <div class="section-title">
+            <h2>Acciones preventivas clave</h2>
+            <p>Prácticas que contribuyen a una cultura de bienestar mental.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Psicoeducación</h3>
+                    <p>Aprender sobre emociones, estrés y autocuidado.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Hábitos protectores</h3>
+                    <p>Rutinas que fortalecen equilibrio mental.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Entornos saludables</h3>
+                    <p>Promover apoyo en familia, escuela y trabajo.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Detección temprana</h3>
+                    <p>Identificar señales para buscar apoyo oportuno.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Promoción comunitaria</h3>
+                    <p>Campañas, formación y redes de cuidado.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1474418397713-7ede21d49118?auto=format&fit=crop&w=1200&q=80">
+                <div class="card-content">
+                    <h3>Reducir estigma</h3>
+                    <p>Hablar de salud mental con apertura y respeto.</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h2>Señales para prestar atención</h2>
+            <div class="grid4">
+                <div class="box">
+                    <h3>⚠ Cambios emocionales</h3>
+                    <p>Alteraciones persistentes del estado de ánimo.</p>
+                </div>
+                <div class="box">
+                    <h3>😴 Cambios de hábitos</h3>
+                    <p>Sueño, apetito o energía alterados.</p>
+                </div>
+                <div class="box">
+                    <h3>💭 Dificultades frecuentes</h3>
+                    <p>Estrés intenso o malestar sostenido.</p>
+                </div>
+                <div class="box">
+                    <h3>🤝 Buscar apoyo</h3>
+                    <p>Consultar a tiempo puede marcar diferencia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="resources">
+            <h2>Recursos recomendados</h2>
+            <div class="links">
+                <a href="https://psicologiaymente.com/cultura/libros-inteligencia-emocional">Inteligencia Emocional -
+                    top</a>
+                <a href="https://www.unesco.org/es/health-education/mental-health">Salud Mental - UNESCO</a>
+
+            </div>
+        </div>
+    </section>
+    <footer>© Salud Mental | Prevención y Educación</footer>
+</body>
+
+</html>
